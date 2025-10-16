@@ -267,7 +267,7 @@ npm run build
 npm start
 ```
 
-Le projet sera accessible sur [http://localhost:3000](http://localhost:3000).
+Le projet sera accessible sur [https://bee-agency.vercel.app/](https://bee-agency.vercel.app/).
 
 ## Structure des Données
 
@@ -277,7 +277,7 @@ Les données des cartes Bento sont centralisées dans `src/lib/constants/bento.t
 
 - **Node.js** : v18+ requis
 - **Package Manager** : npm (pnpm et yarn compatibles)
-- **Browsers supportés** : Chrome, Firefox, Safari, Edge (2 dernières versions)
+- **Browsers supportés** : Chrome, Firefox, Safari
 - **Mobile** : iOS Safari 14+, Chrome Android 90+
 
 ---
