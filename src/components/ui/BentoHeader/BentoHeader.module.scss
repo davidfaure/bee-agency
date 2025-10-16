@@ -1,0 +1,33 @@
+@use "@/styles/utils/variables" as *;
+@use "@/styles/shared/text" as *;
+
+.header {
+  margin-bottom: 0.6rem;
+}
+
+.title {
+  @include text-24;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: $color-black;
+}
+
+.descriptionMultiple {
+  @include text-16;
+  max-width: 45ch;
+  color: rgba($color-black, 0.6);
+  line-height: 1.5;
+  margin-top: 0.8rem;
+}
+
+.description {
+  @include text-16;
+  max-width: 45ch;
+  color: rgba($color-black, 0.6);
+  line-height: 1.5;
+}
+
+.descriptions {
+  display: flex;
+  flex-direction: column; /* each line on a new row */
+}

@@ -1,0 +1,15 @@
+@use "@/styles/utils/mixins" as *;
+@use "@/styles/utils/variables" as *;
+
+.content {
+  position: relative;
+  width: 100%;
+
+  @media (max-width: $breakpoints-phone) {
+    min-height: 35rem;
+  }
+}
+
+.centered {
+  @include center;
+}

@@ -1,0 +1,9 @@
+@use "@/styles/utils/variables" as *;
+
+.section {
+  padding: 8rem 3.2rem;
+
+  @media (max-width: $breakpoints-phone) {
+    padding: 3.2rem 1.6rem;
+  }
+}

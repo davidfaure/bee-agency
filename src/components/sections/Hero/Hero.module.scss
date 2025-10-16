@@ -1,0 +1,57 @@
+@use "@/styles/utils/variables" as *;
+@use "@/styles/utils/mixins" as *;
+@use "@/styles/shared/text" as *;
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: $color-white;
+  color: $color-black;
+  width: 100%;
+  @include center;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  line-height: 1.1;
+
+  @media (min-width: $breakpoints-phone) {
+    font-size: 7rem;
+  }
+
+  @media (min-width: $breakpoints-tablet) {
+    font-size: 8rem;
+  }
+}
+
+.scroll {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  span {
+    font-size: 1.4rem;
+    color: rgba($color-black, 0.6);
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+    @media (min-width: $breakpoints-phone) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

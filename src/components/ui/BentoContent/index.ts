@@ -1,0 +1,1 @@
+export { BentoContent } from "./BentoContent";

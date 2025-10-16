@@ -1,0 +1,16 @@
+@use "@/styles/utils/variables" as *;
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 90em;
+  padding: 0 $padding;
+
+  @media (max-width: $breakpoints-tablet) {
+    padding: 0;
+  }
+
+  @media (max-width: $breakpoints-phone) {
+    padding: 0;
+  }
+}
