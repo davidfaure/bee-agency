@@ -1,0 +1,152 @@
+@use "../utils/variables" as *;
+
+// Text mixins for use in components
+@mixin text-12 {
+  font-size: 1.2rem;
+  letter-spacing: 0em;
+  line-height: 1.6rem;
+}
+
+@mixin text-14 {
+  font-size: 1.4rem;
+  letter-spacing: 0em;
+  line-height: 1.2;
+
+  @media (max-width: $breakpoints-phone) {
+    font-size: 1.2rem;
+  }
+}
+
+@mixin text-16 {
+  font-size: 1.6rem;
+  letter-spacing: 0em;
+  line-height: 2.4rem;
+
+  @media (max-width: $breakpoints-phone) {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+@mixin text-18 {
+  font-size: 1.8rem;
+  letter-spacing: 0em;
+  line-height: 1.2;
+
+  @media (max-width: $breakpoints-phone) {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin text-20 {
+  font-size: 2rem;
+  letter-spacing: 0em;
+  line-height: 1.2;
+
+  @media (max-width: $breakpoints-phone) {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin text-24 {
+  font-size: 2.4rem;
+  letter-spacing: 0em;
+  line-height: 1.1;
+
+  @media (max-width: $breakpoints-phone) {
+    font-size: 2rem;
+  }
+}
+
+@mixin text-32 {
+  font-size: 3.2rem;
+  letter-spacing: 0em;
+  line-height: 1;
+
+  @media (max-width: $breakpoints-phone) {
+    font-size: 2.6rem;
+  }
+}
+
+@mixin text-48 {
+  font-size: 4.8rem;
+  letter-spacing: 0em;
+  line-height: 1;
+
+  @media (max-width: $breakpoints-phone) {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+}
+
+@mixin text-56 {
+  font-size: 5.6rem;
+  letter-spacing: 0em;
+  line-height: 1;
+
+  @media (max-width: $breakpoints-phone) {
+    font-size: 4.2rem;
+  }
+}
+
+@mixin text-64 {
+  font-size: 6.4rem;
+  letter-spacing: 0em;
+  line-height: 1;
+
+  @media (max-width: $breakpoints-phone) {
+    font-size: 4.8rem;
+  }
+}
+
+@mixin text-64-bold {
+  @include text-64;
+  font-weight: 700;
+}
+
+@mixin text-88 {
+  font-size: 8.8rem;
+  letter-spacing: 0em;
+  line-height: 1;
+
+  @media (max-width: $breakpoints-phone) {
+    font-size: 6.4rem;
+  }
+}
+
+.text-12 {
+  @include text-12;
+}
+.text-14 {
+  @include text-14;
+}
+.text-16 {
+  @include text-16;
+}
+.text-18 {
+  @include text-18;
+}
+.text-20 {
+  @include text-20;
+}
+.text-24 {
+  @include text-24;
+}
+.text-32 {
+  @include text-32;
+}
+.text-48 {
+  @include text-48;
+}
+.text-56 {
+  @include text-56;
+}
+.text-64 {
+  @include text-64;
+}
+.text-64-bold {
+  @include text-64-bold;
+}
+.text-88 {
+  @include text-88;
+}

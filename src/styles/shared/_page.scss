@@ -1,0 +1,13 @@
+@use "../utils/mixins" as *;
+
+.page {
+  @include page;
+}
+
+.page-active {
+  @include page-active;
+}
+
+.content {
+  @include content;
+}

@@ -1,0 +1,15 @@
+.paragraph {
+  overflow: hidden;
+
+  p,
+  h1,
+  h2,
+  h3 {
+    overflow: hidden;
+    span {
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: top;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+// Base
+@use "./base/reset";
+@use "./base/base";
+
+// Utils are imported where needed via @use
+
+// Shared
+@use "./shared/utilities";
+@use "./shared/text";
+@use "./shared/page";
+
+// Animation containers
+.animated-paragraph {
+  overflow: hidden;
+
+  p,
+  h1,
+  h2,
+  h3 {
+    overflow: hidden;
+  }
+
+  span {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+  }
+}
+
+[data-animation="label"],
+[data-animation="paragraph"],
+[data-animation="title"] {
+  span {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+  }
+}

@@ -1,0 +1,38 @@
+// Breakpoints
+$breakpoints-phone: 768px;
+$breakpoints-tablet: 1024px;
+$breakpoints-desktop: 1440px;
+$breakpoints-large: 2560px;
+
+// Spacing
+$padding: 6.4rem;
+$padding-mobile: 3rem;
+$badge-size: 14.8rem;
+$badge-size-mobile: 16.4rem;
+
+// Colors
+$color-black: #09090b;
+$color-black-bg: #1b1715;
+$color-black-placeholder: #241e1c;
+$color-orange: #fb923c;
+$color-white: #fff;
+
+// Z-indexes
+$z-indexes: ("content", "navigation", "modal", "loader");
+
+// Easings
+$ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+$custom-expo: cubic-bezier(0.02, 0.84, 0.04, 0.98);
+
+// Easings - In
+$i1: cubic-bezier(0.47, 0, 0.745, 0.715);
+$i2: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$i3: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$i4: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+
+// Easings - Out
+$o1: cubic-bezier(0.39, 0.575, 0.565, 1);
+$o2: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$o3: cubic-bezier(0.215, 0.61, 0.355, 1);
+$o4: cubic-bezier(0.165, 0.84, 0.44, 1);

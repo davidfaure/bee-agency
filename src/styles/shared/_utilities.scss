@@ -1,0 +1,9 @@
+@use "../utils/mixins" as *;
+
+.cover {
+  @include cover;
+}
+
+.center {
+  @include center;
+}

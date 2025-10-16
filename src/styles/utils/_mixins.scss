@@ -1,0 +1,70 @@
+@use "./variables" as *;
+@use "./functions" as *;
+
+// Mixins instead of placeholders for cross-module use
+@mixin cover {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@mixin center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin page {
+  @include cover;
+  opacity: 0;
+  visibility: hidden;
+  z-index: z("content");
+}
+
+@mixin page-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@mixin content {
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+}
+
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin ratio($height, $width) {
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    padding-top: calc($width / $height * 100%);
+    width: 100%;
+  }
+}

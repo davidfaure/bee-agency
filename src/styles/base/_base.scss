@@ -1,0 +1,82 @@
+@use "../utils/variables" as *;
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  font-size: calc(100vw / 1440 * 10);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  text-rendering: optimizeLegibility;
+  -webkit-text-rendering: optimizeLegibility;
+  overscroll-behavior: none;
+  width: 100%;
+  height: 100%;
+  background-color: $color-white;
+  color: $color-black;
+}
+
+@media (max-width: $breakpoints-phone) {
+  html {
+    font-size: calc(100vw / 393 * 10);
+  }
+}
+
+@media (min-width: $breakpoints-desktop) {
+  html {
+    font-size: calc(100vw / 1440 * 10);
+  }
+}
+
+@media (min-width: $breakpoints-large) {
+  html {
+    font-size: calc(100vw / 2560 * 10);
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: currentColor;
+  cursor: pointer;
+  outline: none;
+}
+
+img {
+  opacity: 1;
+  vertical-align: middle;
+  transition: opacity 400ms;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 0 !important;
+  display: none !important;
+}
