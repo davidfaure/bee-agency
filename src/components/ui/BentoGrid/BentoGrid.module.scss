@@ -2,10 +2,10 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(22, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.6rem;
 
-  @media (max-width: $breakpoints-phone) {
-    grid-template-columns: 1fr;
+  @media (min-width: $breakpoints-phone) {
+    grid-template-columns: repeat(22, 1fr);
   }
 }

@@ -9,20 +9,20 @@
     rgba(9, 9, 11, 0.05) 100%
   );
   top: var(--y);
-  left: var(--x-mobile);
-  width: var(--size-mobile);
-  height: var(--size-mobile);
+  left: var(--x-desktop);
+  width: var(--size-desktop);
+  height: var(--size-desktop);
 
-  @media (min-width: $breakpoints-phone) {
+  @media (max-width: #{($breakpoints-phone + 1px)}) {
+    left: var(--x-mobile);
+    width: var(--size-mobile);
+    height: var(--size-mobile);
+  }
+
+  @media (min-width: #{($breakpoints-phone + 1px)}) and (max-width: $breakpoints-tablet) {
     left: var(--x-tablet);
     width: var(--size-tablet);
     height: var(--size-tablet);
-  }
-
-  @media (min-width: $breakpoints-tablet) {
-    left: var(--x-desktop);
-    width: var(--size-desktop);
-    height: var(--size-desktop);
   }
 }
 

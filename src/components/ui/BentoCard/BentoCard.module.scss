@@ -26,7 +26,7 @@
     grid-row: var(--row-mobile);
   }
 
-  @media (min-width: $breakpoints-phone) and (max-width: $breakpoints-tablet) {
+  @media (min-width: #{($breakpoints-phone + 1px)}) and (max-width: $breakpoints-tablet) {
     grid-column: var(--grid-tablet);
     grid-row: var(--row-tablet);
   }

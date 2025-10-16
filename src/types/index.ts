@@ -16,6 +16,7 @@ export interface BentoItem {
     desktop?: string;
   };
   content?: React.ReactNode;
+  ContentComponent?: FC<{ className?: string }>;
   icon?: string;
   image?: string;
   bgColor?: string;

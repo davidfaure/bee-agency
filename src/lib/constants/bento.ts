@@ -1,4 +1,8 @@
 import { BentoItem, Tile } from "@/types";
+import { Globe } from "@/components/ui/icons/Globe";
+import { IconWrapper } from "@/components/ui/icons/Icons/IconWrapper";
+import { Control } from "@/components/ui/icons/Control/Control";
+import { Chat } from "@/components/ui/Chat/Chat";
 
 export const BENTO_ITEMS: BentoItem[] = [
   {
@@ -11,6 +15,7 @@ export const BENTO_ITEMS: BentoItem[] = [
       tablet: "1 / 11",
       desktop: "1 / 11",
     },
+    ContentComponent: Globe,
   },
   {
     id: 2,
@@ -22,6 +27,7 @@ export const BENTO_ITEMS: BentoItem[] = [
       tablet: "11 / 23",
       desktop: "11 / 23",
     },
+    ContentComponent: Control,
   },
   {
     id: 3,
@@ -35,6 +41,7 @@ export const BENTO_ITEMS: BentoItem[] = [
       tablet: "1 / 11",
       desktop: "1 / 13",
     },
+    ContentComponent: IconWrapper,
   },
   {
     id: 4,
@@ -48,6 +55,7 @@ export const BENTO_ITEMS: BentoItem[] = [
       tablet: "11 / 23",
       desktop: "13 / 23",
     },
+    ContentComponent: Chat,
   },
 ];
 

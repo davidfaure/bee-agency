@@ -22,6 +22,7 @@ export function Features() {
 
         <BentoGrid>
           {BENTO_ITEMS.map((item) => {
+            const { ContentComponent } = item;
             return (
               <BentoCard
                 key={item.id}
@@ -32,11 +33,14 @@ export function Features() {
                   title={item.title}
                   description={item.description}
                 />
-
                 <BentoContent centered>
-                  <div className={styles.placeholder}>
-                    <span>Visual content here</span>
-                  </div>
+                  {ContentComponent ? (
+                    <ContentComponent className={styles.icon} />
+                  ) : (
+                    <div className={styles.placeholder}>
+                      <span>Visual content here</span>
+                    </div>
+                  )}
                 </BentoContent>
               </BentoCard>
             );
